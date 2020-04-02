@@ -18,7 +18,7 @@ module.exports = {
       },
       { name: 'theme-color', content: '#04c0ff' }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: []
   },
   /*
    ** Customize the progress-bar color

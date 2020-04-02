@@ -1,5 +1,5 @@
 <template>
-  <h1>Test component</h1>
+  <h1>All Contacts here</h1>
 </template>
 
 <script>

@@ -22,7 +22,7 @@ module.exports = {
       { property: 'og:type', content: 'website' },
       // Should the the same as your canonical link, see below.
       { property: 'og:url', content: 'https://covid19kenya.ml' },
-      { property: 'og:image', content: 'https://covid19kenya.ml/images/infected.jpg' },
+      { property: 'og:image', content: 'https://covid19kenya.ml/images/infected.png' },
       { property: 'og:description', content: process.env.npm_package_description },
 
       // Twitter card
@@ -32,12 +32,12 @@ module.exports = {
       { name: 'twitter:description', content: process.env.npm_package_description },
       // Your twitter handle, if you have one.
       { name: 'twitter:creator', content: '@StanleyMasinde_' },
-      { name: 'twitter:image:src', content: 'https://covid19kenya.ml/images/infected.jpg' },
+      { name: 'twitter:image:src', content: 'https://covid19kenya.ml/images/infected.png' },
 
       // Google / Schema.org markup:
       { itemprop: 'name', content: 'Covid_19 Kenya' },
       { itemprop: 'description', content: process.env.npm_package_description },
-      { itemprop: 'image', content: 'https://covid19kenya.ml/images/infected.jpg' }
+      { itemprop: 'image', content: 'https://covid19kenya.ml/images/infected.png' }
     ],
     link: []
   },

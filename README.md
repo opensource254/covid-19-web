@@ -1,7 +1,7 @@
 # covid-19-kenya
 
-> An app to give info about covid 19 in Kenya
-> Available here [Codid-19-kenya](https://covid19kenya.ml)
+> An app to give info about covid 19 in Kenya.
+> Available here [Covid-19-kenya](https://covid19kenya.ml)
 
 ## Build Setup
 

@@ -19,4 +19,4 @@ $ npm run start
 $ npm run generate
 ```
 
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+`This is a mobile web app, For the best experience please use it on a mobile device`

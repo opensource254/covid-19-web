@@ -2,15 +2,23 @@
   <div>
     <v-row>
       <v-col class="text-center">
-        <v-card>
+        <v-card color="primary">
           <v-card-text class="title">
-            Cases
+            Total Cases
             <p>{{ stats.cases }}</p>
           </v-card-text>
         </v-card>
       </v-col>
       <v-col class="text-center">
-        <v-card>
+        <v-card color="secondary">
+          <v-card-text class="title">
+            Today Cases
+            <p>{{ stats.todayCases }}</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col class="text-center">
+        <v-card color="success">
           <v-card-text class="title">
             Recovered
             <p>{{ stats.recovered }}</p>
@@ -18,42 +26,35 @@
         </v-card>
       </v-col>
       <v-col class="text-center">
-        <v-card>
+        <v-card color="info">
           <v-card-text class="title">
-            Deaths
+            Active Cases
+            <p>{{ stats.active }}</p>
+          </v-card-text>
+        </v-card>
+      </v-col>
+      <v-col class="text-center">
+        <v-card color="error">
+          <v-card-text class="title">
+            Total Deaths
             <p>{{ stats.deaths }}</p>
           </v-card-text>
         </v-card>
       </v-col>
       <v-col class="text-center">
-        <v-card>
+        <v-card color="warning">
           <v-card-text class="title">
-            Today's Deaths
+            Today Deaths
             <p>{{ stats.todayDeaths }}</p>
           </v-card-text>
         </v-card>
       </v-col>
+
       <v-col class="text-center">
-        <v-card>
-          <v-card-text class="title">
-            Today's Cases
-            <p>{{ stats.todayCases }}</p>
-          </v-card-text>
-        </v-card>
-      </v-col>
-      <v-col class="text-center">
-        <v-card>
+        <v-card color="teal">
           <v-card-text class="title">
             Critical Cases
             <p>{{ stats.critical }}</p>
-          </v-card-text>
-        </v-card>
-      </v-col>
-      <v-col class="text-center">
-        <v-card>
-          <v-card-text class="title">
-            Active Cases
-            <p>{{ stats.active }}</p>
           </v-card-text>
         </v-card>
       </v-col>

@@ -80,6 +80,34 @@ export default {
       `https://corona.lmao.ninja/countries/kenya`
     )
     this.$store.commit('updatetStats', stats.data)
+  },
+  head() {
+    return {
+      title: 'Statistics',
+      titleTemplate: null,
+      meta: [
+        {
+          name: 'description',
+          content:
+            'A breakdown of the latest COVID_19 cases in kenya. The updates are in realtime'
+        },
+        { name: 'theme-color', content: '#04c0ff' },
+        { property: 'og:title', content: 'Covid_19 Kenya' },
+        { property: 'og:site_name', content: 'Covid 19 Kenya' },
+        { property: 'og:type', content: 'website' },
+        // Should the the same as your canonical link, see below.
+        { property: 'og:url', content: 'https://covid19kenya.ml' },
+        {
+          property: 'og:image',
+          content: 'https://covid19kenya.ml/images/infected.png'
+        },
+        {
+          property: 'og:description',
+          content:
+            'A breakdown of the latest COVID_19 cases in kenya. The updates are in realtime'
+        }
+      ]
+    }
   }
 }
 </script>

@@ -127,7 +127,34 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Precations',
+      titleTemplate: null,
+      meta: [
+        {
+          name: 'description',
+          content: 'What you need to know in order to be safe from COVID_19'
+        },
+        { name: 'theme-color', content: '#04c0ff' },
+        { property: 'og:title', content: 'Covid_19 Kenya' },
+        { property: 'og:site_name', content: 'Precautions' },
+        { property: 'og:type', content: 'website' },
+        // Should the the same as your canonical link, see below.
+        { property: 'og:url', content: 'https://covid19kenya.ml' },
+        {
+          property: 'og:image',
+          content: 'https://covid19kenya.ml/images/infected.png'
+        },
+        {
+          property: 'og:description',
+          content: 'What you need to know in order to be safe from COVID_19'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style></style>

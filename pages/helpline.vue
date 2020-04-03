@@ -33,7 +33,35 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Helpline',
+      titleTemplate: null,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Get All COVID_19 contact information in Kenya'
+        },
+        { name: 'theme-color', content: '#04c0ff' },
+        { property: 'og:title', content: 'Covid_19 Kenya' },
+        { property: 'og:site_name', content: 'Contact Info' },
+        { property: 'og:type', content: 'website' },
+        // Should the the same as your canonical link, see below.
+        { property: 'og:url', content: 'https://covid19kenya.ml' },
+        {
+          property: 'og:image',
+          content: 'https://covid19kenya.ml/images/infected.png'
+        },
+        {
+          property: 'og:description',
+          content: 'Get All COVID_19 contact information in Kenya'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 <style></style>

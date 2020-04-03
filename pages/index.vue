@@ -17,7 +17,14 @@
 </template>
 
 <script>
-export default {}
+export default {
+  head() {
+    return {
+      title: 'Covid_19 Kenya',
+      titleTemplate: null
+    }
+  }
+}
 </script>
 
 <style></style>

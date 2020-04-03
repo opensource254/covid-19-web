@@ -134,10 +134,10 @@ export default {
       titleTemplate: null,
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content: 'What you need to know in order to be safe from COVID_19'
         },
-        { name: 'theme-color', content: '#04c0ff' },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Precautions' },
         { property: 'og:type', content: 'website' },

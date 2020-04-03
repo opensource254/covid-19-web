@@ -44,7 +44,6 @@ export default {
           name: 'description',
           content: 'Get All COVID_19 contact information in Kenya'
         },
-        { name: 'theme-color', content: '#04c0ff' },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Contact Info' },
         { property: 'og:type', content: 'website' },

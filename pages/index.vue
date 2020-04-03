@@ -21,7 +21,14 @@ export default {
   head() {
     return {
       title: 'Covid_19 Kenya',
-      titleTemplate: null
+      titleTemplate: null,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Get All COVID_19 contact information in Kenya'
+        }
+      ]
     }
   }
 }

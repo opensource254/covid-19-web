@@ -11,26 +11,7 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      {
-        hid: 'description',
-        name: 'description',
-        content: process.env.npm_package_description || ''
-      },
       { name: 'theme-color', content: '#04c0ff' },
-      { property: 'og:title', content: 'Covid_19 Kenya' },
-      { property: 'og:site_name', content: 'Covid 19 Kenya' },
-      { property: 'og:type', content: 'website' },
-      // Should the the same as your canonical link, see below.
-      { property: 'og:url', content: 'https://covid19kenya.ml' },
-      {
-        property: 'og:image',
-        content: 'https://covid19kenya.ml/images/infected.png'
-      },
-      {
-        property: 'og:description',
-        content: process.env.npm_package_description
-      },
-
       // Twitter card
       { name: 'twitter:card', content: 'summary' },
       {

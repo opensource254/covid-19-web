@@ -87,11 +87,11 @@ export default {
       titleTemplate: null,
       meta: [
         {
+          hid: 'description',
           name: 'description',
           content:
             'A breakdown of the latest COVID_19 cases in kenya. The updates are in realtime'
         },
-        { name: 'theme-color', content: '#04c0ff' },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Covid 19 Kenya' },
         { property: 'og:type', content: 'website' },

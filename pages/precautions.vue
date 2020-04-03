@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <v-col cols="12" md="6">
-      <v-expansion-panels popout>
+      <v-expansion-panels popout inset>
         <v-expansion-panel>
           <v-expansion-panel-header
             >Signs and symptoms</v-expansion-panel-header

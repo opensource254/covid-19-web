@@ -1,7 +1,7 @@
 <template>
   <v-row>
     <v-col>
-      <v-list three-line>
+      <v-list three-line dense>
         <v-subheader>General Information</v-subheader>
         <v-list-item>
           Corona Virus Disease 2019 (COVID19) is a new respiratory illness that

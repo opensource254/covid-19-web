@@ -27,7 +27,7 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
 
-        <v-expansion-panel>
+        <v-expansion-panel class="body-2">
           <v-expansion-panel-header>How it is spread</v-expansion-panel-header>
           <v-expansion-panel-content>
             <v-list dense>
@@ -49,7 +49,7 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
 
-        <v-expansion-panel>
+        <v-expansion-panel class="body-2">
           <v-expansion-panel-header
             >How to stop the spread</v-expansion-panel-header
           >
@@ -89,7 +89,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
-    <v-col cols="12" md="6">
+    <v-col cols="12" md="6" class="body-2">
       <h3>What is self quarantine?</h3>
       Self qaurantine is an act of individuals who may have been exposed to
       COVID-19 separating themselves for for 14 days in order to monitor if they

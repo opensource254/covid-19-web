@@ -3,6 +3,29 @@
 > An app to give info about covid 19 in Kenya.
 > Available here [Covid-19-kenya](https://covid19kenya.ml)
 
+## Screenshots
+
+## Screenshots
+<img src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot01.png" width="250"/> <img
+ src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot02.png" width="250"/> <img
+ src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot03.png" width="250"/>
+
+
+
+
+## Data Sources
+[Ministry Of Health kenya  ](http://www.health.go.ke/)
+
+[OpenSource 254 corona-api  ](https://github.com/Opensource-254/corona-api)
+
+[world meters  ](https://https://www.worldometers.info/coronavirus/)
+
+[CSSEGISandData  ](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
+
+# Licence
+[GPL 3.0](../master/LICENSE)
+
+
 ## Build Setup
 
 ```bash

@@ -1,5 +1,5 @@
 <template>
-  <v-row>
+  <v-row justify="center">
     <v-col cols="12" md="6" class="body-1">
       <v-list three-line dense shaped flat expand>
         <v-subheader>General Information</v-subheader>

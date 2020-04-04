@@ -8,10 +8,11 @@
       >
     </v-col>
     <v-col md="6">
-      <v-img src="/images/infected.png"></v-img>
+      <v-img contain height="300" src="/images/infected.png"></v-img>
     </v-col>
     <v-col>
       <v-btn block large to="/helpline">Get Help</v-btn>
+      <v-btn class="mt-1" block large to="/settings">Settings</v-btn>
     </v-col>
   </v-row>
 </template>

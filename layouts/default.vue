@@ -2,13 +2,6 @@
   <v-app>
     <v-app-bar app>
       <v-toolbar-title>Covid_19 Kenya</v-toolbar-title>
-
-      <v-spacer></v-spacer>
-      <v-toolbar-items>
-        <v-btn icon @click="toggleTheme">
-          <v-icon>mdi-theme-light-dark</v-icon>
-        </v-btn>
-      </v-toolbar-items>
     </v-app-bar>
     <v-content>
       <v-container fluid>
@@ -43,11 +36,7 @@
 
 <script>
 export default {
-  methods: {
-    toggleTheme() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
-    }
-  }
+  mounted() {}
 }
 </script>
 

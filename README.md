@@ -4,8 +4,6 @@
 > Available here [Covid-19-kenya](https://covid19kenya.ml)
 
 ## Screenshots
-
-## Screenshots
 <img src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot01.png" width="250"/> <img
  src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot02.png" width="250"/> <img
  src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot03.png" width="250"/>

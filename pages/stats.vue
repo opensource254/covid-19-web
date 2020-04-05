@@ -1,63 +1,71 @@
 <template>
-  <div>
+  <div style="height: 40vh;">
+    <v-row>
+      <v-col cols="12">
+        <v-btn large color="primary" fab top right fixed>
+          <v-icon>mdi-share-variant</v-icon>
+        </v-btn>
+      </v-col>
+    </v-row>
     <v-alert v-if="$store.state.hasError" type="error">
-      We are having trouble connecting to the internet</v-alert
+      Oops! something went wrong 😢</v-alert
     >
+
     <v-row v-if="!$store.state.loading" align="center" justify="center">
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="primary">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Total Cases
-            <p>{{ stats.cases }}</p>
+            <p class="primary--text">{{ stats.cases }}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="secondary">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Today Cases
-            <p>{{ stats.todayCases }}</p>
+            <p class="secondary--text">{{ stats.todayCases }}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="success">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Recovered
-            <p>{{ stats.recovered }}</p>
+            <p class="success--text">{{ stats.recovered }}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="info">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Active Cases
-            <p>{{ stats.active }}</p>
+            <p class="info--text">{{ stats.active }}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="error">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Total Deaths
-            <p>{{ stats.deaths }}</p>
+            <p class="error--text">{{ stats.deaths }}</p>
           </v-card-text>
         </v-card>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
-        <v-card outlined hover shaped color="warning">
-          <v-card-text class="title">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Today Deaths
-            <p>{{ stats.todayDeaths }}</p>
+            <p class="warning--text">{{ stats.todayDeaths }}</p>
           </v-card-text>
         </v-card>
       </v-col>
 
       <v-col cols="12" md="4" class="text-center">
-        <v-card outlined hover shaped color="teal">
-          <v-card-text class="title">
+        <v-card outlined raised>
+          <v-card-text class="body-1">
             Critical Cases
-            <p>{{ stats.critical }}</p>
+            <p class="teal--text">{{ stats.critical }}</p>
           </v-card-text>
         </v-card>
       </v-col>
@@ -70,22 +78,22 @@
     </v-row>
 
     <v-row v-if="$store.state.loading" justify="center">
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
-      <v-col cols="6" md="4" class="text-center">
+      <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-skeleton-loader class="mx-auto" type="card"></v-skeleton-loader>
       </v-col>
 
@@ -113,6 +121,18 @@ export default {
     this.getData()
   },
   methods: {
+    shareStats() {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: 'Latest Covid_19 Stats in Kenya',
+            text: `Checkout the latest covid_19 stats in kenya. Total cases ${this.$store.state.stats.cases}...`,
+            url: 'https://covid19kenya.ml/stats'
+          })
+          .then(() => true)
+          .catch(() => this.$store.commit('showError'))
+      }
+    },
     retryConnection() {
       window.ononline = () => {
         setTimeout(() => {

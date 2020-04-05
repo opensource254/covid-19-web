@@ -1,8 +1,5 @@
 <template>
   <v-app>
-    <v-app-bar app>
-      <v-toolbar-title>Covid_19 Kenya</v-toolbar-title>
-    </v-app-bar>
     <v-content>
       <v-container fluid>
         <router-view></router-view>

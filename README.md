@@ -15,7 +15,7 @@
 ## Data Sources
 [Ministry Of Health kenya  ](http://www.health.go.ke/)
 
-[OpenSource 254 corona-api  ](https://github.com/Opensource-254/corona-api)
+[OpenSource 254 corona-api  ](https://Opensource-254.github.io/corona-api)
 
 [world meters  ](https://https://www.worldometers.info/coronavirus/)
 
@@ -42,4 +42,4 @@ $ npm run start
 $ npm run generate
 ```
 
-`This is a mobile web app, For the best experience please use it on a mobile device`
+# This is a mobile web app, For the best experience please use it on a mobile device

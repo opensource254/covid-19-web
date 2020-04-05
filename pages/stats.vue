@@ -1,8 +1,8 @@
 <template>
-  <div style="height: 40vh;">
+  <div>
     <v-row>
       <v-col cols="12">
-        <v-btn @click="shareStats" large color="primary" fab top right fixed>
+        <v-btn color="primary" fab top right fixed @click="shareStats">
           <v-icon>mdi-share-variant</v-icon>
         </v-btn>
       </v-col>
@@ -13,7 +13,7 @@
 
     <v-row v-if="!$store.state.loading" align="center" justify="center">
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Total Cases
             <p class="primary--text">{{ stats.cases }}</p>
@@ -21,7 +21,7 @@
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Today Cases
             <p class="secondary--text">{{ stats.todayCases }}</p>
@@ -29,7 +29,7 @@
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Recovered
             <p class="success--text">{{ stats.recovered }}</p>
@@ -37,7 +37,7 @@
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Active Cases
             <p class="info--text">{{ stats.active }}</p>
@@ -45,7 +45,7 @@
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Total Deaths
             <p class="error--text">{{ stats.deaths }}</p>
@@ -53,7 +53,7 @@
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Today Deaths
             <p class="warning--text">{{ stats.todayDeaths }}</p>
@@ -62,7 +62,7 @@
       </v-col>
 
       <v-col cols="12" md="4" class="text-center">
-        <v-card outlined raised>
+        <v-card flat outlined>
           <v-card-text class="body-1">
             Critical Cases
             <p class="teal--text">{{ stats.critical }}</p>

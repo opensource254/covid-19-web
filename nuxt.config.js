@@ -85,7 +85,7 @@ module.exports = {
     customVariables: ['~/assets/variables.scss'],
     treeShake: false,
     theme: {
-      dark: false,
+      dark: true,
       themes: {
         dark: {
           primary: '#04c0ff',

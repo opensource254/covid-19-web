@@ -2,7 +2,7 @@
   <div style="height: 40vh;">
     <v-row>
       <v-col cols="12">
-        <v-btn large color="primary" fab top right fixed>
+        <v-btn @click="shareStats" large color="primary" fab top right fixed>
           <v-icon>mdi-share-variant</v-icon>
         </v-btn>
       </v-col>

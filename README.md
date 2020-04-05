@@ -42,4 +42,4 @@ $ npm run start
 $ npm run generate
 ```
 
-`This is a mobile web app, For the best experience please use it on a mobile device`
+# This is a mobile web app, For the best experience please use it on a mobile device

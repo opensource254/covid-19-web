@@ -2,7 +2,7 @@
   <div>
     <v-row>
       <v-col cols="12">
-        <v-btn color="primary" fab top right fixed @click="shareStats">
+        <v-btn color="primary" large fab top right fixed @click="shareStats">
           <v-icon>mdi-share-variant</v-icon>
         </v-btn>
       </v-col>
@@ -11,10 +11,23 @@
       Oops! something went wrong 😢</v-alert
     >
 
+    <v-row v-if="!$store.state.loading">
+      <v-col>
+        <p class="font-weight-medium body-1">
+          Last Update:
+          {{
+            `${new Date(stats.updated).getHours()}:${new Date(
+              stats.updated
+            ).getMinutes()} hrs`
+          }}
+        </p>
+      </v-col>
+    </v-row>
+
     <v-row v-if="!$store.state.loading" align="center" justify="center">
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Total Cases
             <p class="primary--text">{{ stats.cases }}</p>
           </v-card-text>
@@ -22,7 +35,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Today Cases
             <p class="secondary--text">{{ stats.todayCases }}</p>
           </v-card-text>
@@ -30,7 +43,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Recovered
             <p class="success--text">{{ stats.recovered }}</p>
           </v-card-text>
@@ -38,7 +51,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Active Cases
             <p class="info--text">{{ stats.active }}</p>
           </v-card-text>
@@ -46,7 +59,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Total Deaths
             <p class="error--text">{{ stats.deaths }}</p>
           </v-card-text>
@@ -54,7 +67,7 @@
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Today Deaths
             <p class="warning--text">{{ stats.todayDeaths }}</p>
           </v-card-text>
@@ -63,17 +76,11 @@
 
       <v-col cols="12" md="4" class="text-center">
         <v-card flat outlined>
-          <v-card-text class="body-1">
+          <v-card-text class="body-1 font-weight-bold font-italic">
             Critical Cases
             <p class="teal--text">{{ stats.critical }}</p>
           </v-card-text>
         </v-card>
-      </v-col>
-    </v-row>
-
-    <v-row v-if="!$store.state.loading">
-      <v-col>
-        <p>Last Update: {{ new Date(stats.updated) }}</p>
       </v-col>
     </v-row>
 

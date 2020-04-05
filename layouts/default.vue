@@ -6,7 +6,6 @@
       </v-container>
     </v-content>
 
-    <v-footer app></v-footer>
     <v-bottom-navigation grow color="primary" app>
       <v-btn to="/">
         <span>Home</span>

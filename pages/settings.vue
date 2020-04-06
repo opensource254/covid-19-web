@@ -27,7 +27,7 @@
         </v-list-item>
 
         <v-list-item
-          href="https://drive.google.com/file/d/1UqPVf_HcK-TdZ5e5F5t2ryZ_iV6bSq8g/view?usp=sharing"
+          href="https://drive.google.com/open?id=1Gea61QgE-Ks_eOJdc92czImXloztN-Oc"
           target="_blank"
         >
           <v-list-item-icon>

@@ -83,7 +83,7 @@ module.exports = {
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    treeShake: true,
+    treeShake: false,
     theme: {
       dark: false,
       themes: {

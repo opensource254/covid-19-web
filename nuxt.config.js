@@ -38,7 +38,9 @@ module.exports = {
         content: 'https://covid19kenya.ml/images/infected.png'
       }
     ],
-    link: [{ rel: 'manifest', href: '/manifest.json' }]
+    link: [
+      { rel: 'manifest', href: '/manifest.json' },
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -83,7 +85,7 @@ module.exports = {
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    treeShake: false,
+    treeShake: true,
     theme: {
       dark: false,
       themes: {

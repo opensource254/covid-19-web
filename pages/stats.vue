@@ -17,55 +17,59 @@
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Total Cases
-          <p class="primary--text">{{ stats.cases }}</p>
+          <h4 class="raleway primary--text">{{ stats.cases }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
-          Today Cases
-          <p class="secondary--text">{{ stats.todayCases }}</p>
+          Cases Today
+          <h4 class="raleway yellow--text">{{ stats.todayCases }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" class="text-center">
         <v-card flat outlined>
           Critical Cases
-          <p class="teal--text">{{ stats.critical }}</p>
+          <h4 class="raleway red--text">{{ stats.critical }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" class="text-center">
         <v-card flat outlined>
           Cases Per Million
-          <p class="teal--text">{{ stats.casesPerOneMillion }}</p>
+          <h4 class="raleway indigo--text">
+            {{ stats.casesPerOneMillion }}
+          </h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Recovered
-          <p class="success--text">{{ stats.recovered }}</p>
+          <h4 class="raleway success--text">{{ stats.recovered }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Active Cases
-          <p class="info--text">{{ stats.active }}</p>
+          <h4 class="raleway info--text">{{ stats.active }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Total Deaths
-          <p class="error--text">{{ stats.deaths }}</p>
+          <h4 class="raleway error--text">{{ stats.deaths }}</h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Deaths per Million
-          <p class="error--text">{{ stats.deathsPerOneMillion }}</p>
+          <h4 class="raleway error--text">
+            {{ stats.deathsPerOneMillion }}
+          </h4>
         </v-card>
       </v-col>
       <v-col cols="6" md="4" lg="3" xl="2" class="text-center">
         <v-card flat outlined>
           Today Deaths
-          <p class="warning--text">{{ stats.todayDeaths }}</p>
+          <h4 class="raleway warning--text">{{ stats.todayDeaths }}</h4>
         </v-card>
       </v-col>
 
@@ -76,14 +80,16 @@
       <v-col cols="6" md="4" class="text-center">
         <v-card flat outlined>
           Tests
-          <p class="teal--text">{{ stats.tests }}</p>
+          <h4 class="raleway teal--text">{{ stats.tests }}</h4>
         </v-card>
       </v-col>
 
       <v-col cols="6" md="4" class="text-center">
         <v-card flat outlined>
           Tests Per Million
-          <p class="teal--text">{{ stats.testsPerOneMillion }}</p>
+          <h4 class="raleway teal--text">
+            {{ stats.testsPerOneMillion }}
+          </h4>
         </v-card>
       </v-col>
     </v-row>
@@ -121,14 +127,14 @@
 
     <v-row v-if="!$store.state.loading">
       <v-col>
-        <p class="font-weight-medium body-1">
+        <h4 class="raleway font-weight-medium body-1">
           Last Update:
           {{
             `${new Date(stats.updated).getHours()}:${new Date(
               stats.updated
             ).getMinutes()} hrs`
           }}
-        </p>
+        </h4>
       </v-col>
     </v-row>
   </div>
@@ -209,4 +215,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.raleway {
+  font-family: 'Raleway', sans-serif !important;
+}
+</style>

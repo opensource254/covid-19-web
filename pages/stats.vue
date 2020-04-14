@@ -166,7 +166,7 @@ export default {
           .share({
             title: 'Latest Covid_19 Stats in Kenya',
             text: `Checkout the latest covid_19 stats in kenya. Total cases ${this.$store.state.stats.cases}...`,
-            url: 'https://covid19kenya.ml/stats'
+            url: 'https://covid19kenya.site/stats'
           })
           .then(() => true)
           .catch(() => this.$store.commit('showError'))
@@ -208,10 +208,10 @@ export default {
         { property: 'og:site_name', content: 'Covid 19 Kenya' },
         { property: 'og:type', content: 'website' },
         // Should the the same as your canonical link, see below.
-        { property: 'og:url', content: 'https://covid19kenya.ml' },
+        { property: 'og:url', content: 'https://covid19kenya.site' },
         {
           property: 'og:image',
-          content: 'https://covid19kenya.ml/images/infected.png'
+          content: 'https://covid19kenya.site/images/infected.png'
         },
         {
           property: 'og:description',

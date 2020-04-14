@@ -34,6 +34,19 @@ export default {
           name: 'description',
           content:
             'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
+        },
+        { property: 'og:title', content: 'Welcome' },
+        { property: 'og:site_name', content: 'Covid 19 kenya' },
+        { property: 'og:type', content: 'website' },
+        // Should the the same as your canonical link, see below.
+        { property: 'og:url', content: 'https://covid19kenya.site' },
+        {
+          property: 'og:image',
+          content: 'https://covid19kenya.site/images/infected.png'
+        },
+        {
+          property: 'og:description',
+          content: 'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
         }
       ]
     }

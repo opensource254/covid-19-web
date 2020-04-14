@@ -2,7 +2,7 @@
 ![Node.js CI](https://github.com/Opensource-254/covid-19-web/workflows/Node.js%20CI/badge.svg)
 
 > An app to give info about covid 19 in Kenya.
-> Available here [Covid-19-kenya](https://covid19kenya.ml)
+> Available here [Covid-19-kenya](https://covid19kenya.site)
 
 ## Screenshots
 <img src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot01.png" width="250"/> <img

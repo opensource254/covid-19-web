@@ -85,7 +85,10 @@ module.exports = {
           measurementId: 'G-FQHBN20J3E'
         },
         services: {
-          auth: true // Just as example. Can be any other service.
+          auth: true,
+          messaging: {
+            createServiceWorker: true
+          }
         }
       }
     ]

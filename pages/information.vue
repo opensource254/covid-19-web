@@ -47,7 +47,8 @@ export default {
       meta: [
         {
           name: 'description',
-          content: 'General information about COVID_19'
+          content:
+            'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
         },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Information' },
@@ -60,7 +61,8 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'General information about COVID_19'
+          content:
+            'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
         }
       ]
     }

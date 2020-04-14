@@ -59,7 +59,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Get All COVID_19 contact information in Kenya'
+          content:
+            'COVID_19 contact information Kenya. All the helpline numbers are toll free'
         },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Contact Info' },

@@ -32,7 +32,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'Get All COVID_19 contact information in Kenya'
+          content:
+            'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
         }
       ]
     }

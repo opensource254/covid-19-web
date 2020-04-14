@@ -136,7 +136,8 @@ export default {
         {
           hid: 'description',
           name: 'description',
-          content: 'What you need to know in order to be safe from COVID_19'
+          content:
+            'How to stay safe from the Covid_19 pandemic. Measures to take in order to be safe from Coron virus'
         },
         { property: 'og:title', content: 'Covid_19 Kenya' },
         { property: 'og:site_name', content: 'Precautions' },
@@ -149,7 +150,8 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'What you need to know in order to be safe from COVID_19'
+          content:
+            'How to stay safe from the Covid_19 pandemic. Measures to take in order to be safe from Coron virus'
         }
       ]
     }

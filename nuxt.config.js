@@ -70,7 +70,25 @@ module.exports = {
     '@nuxtjs/axios',
     '@nuxtjs/pwa',
     // Doc: https://github.com/nuxt-community/dotenv-module
-    '@nuxtjs/dotenv'
+    '@nuxtjs/dotenv',
+    [
+      '@nuxtjs/firebase',
+      {
+        config: {
+          apiKey: 'AIzaSyDWE0XiymFVPgjMwKWCVQziv0hvC0Eis-g',
+          authDomain: 'covid-19kenya.firebaseapp.com',
+          databaseURL: 'https://covid-19kenya.firebaseio.com',
+          projectId: 'covid-19kenya',
+          storageBucket: 'covid-19kenya.appspot.com',
+          messagingSenderId: '1021366242762',
+          appId: '1:1021366242762:web:f25550440d283d9fdf9333',
+          measurementId: 'G-FQHBN20J3E'
+        },
+        services: {
+          auth: true // Just as example. Can be any other service.
+        }
+      }
+    ]
   ],
   /*
    ** Axios module configuration

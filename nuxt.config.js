@@ -27,7 +27,7 @@ module.exports = {
       { name: 'twitter:creator', content: '@StanleyMasinde_' },
       {
         name: 'twitter:image:src',
-        content: 'https://covid19kenya.ml/images/infected.png'
+        content: 'https://covid19kenya.site/images/infected.png'
       },
 
       // Google / Schema.org markup:
@@ -35,7 +35,7 @@ module.exports = {
       { itemprop: 'description', content: process.env.npm_package_description },
       {
         itemprop: 'image',
-        content: 'https://covid19kenya.ml/images/infected.png'
+        content: 'https://covid19kenya.site/images/infected.png'
       }
     ],
     link: [{ rel: 'manifest', href: '/manifest.json' }]

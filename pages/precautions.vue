@@ -143,10 +143,10 @@ export default {
         { property: 'og:site_name', content: 'Precautions' },
         { property: 'og:type', content: 'website' },
         // Should the the same as your canonical link, see below.
-        { property: 'og:url', content: 'https://covid19kenya.ml' },
+        { property: 'og:url', content: 'https://covid19kenya.site' },
         {
           property: 'og:image',
-          content: 'https://covid19kenya.ml/images/infected.png'
+          content: 'https://covid19kenya.site/images/infected.png'
         },
         {
           property: 'og:description',

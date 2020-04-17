@@ -38,7 +38,10 @@ module.exports = {
         content: 'https://covid19kenya.site/images/infected.png'
       }
     ],
-    link: [{ rel: 'manifest', href: '/manifest.json' }]
+    link: [
+      { rel: 'manifest', href: '/manifest.json' },
+      { rel: 'stylesheet', href: '/app.css' }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -94,7 +97,6 @@ module.exports = {
           performance: true,
           analytics: true,
           remoteConfig: true
-        
         }
       }
     ]

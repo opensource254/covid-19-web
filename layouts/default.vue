@@ -39,6 +39,6 @@ export default {
 <style lang="scss">
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 .raleway {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Raleway', sans-serif!important;
 }
 </style>

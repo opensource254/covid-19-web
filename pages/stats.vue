@@ -182,7 +182,7 @@ export default {
     async getData() {
       try {
         const stats = await this.$axios.get(
-          `https://corona.lmao.ninja/countries/kenya`
+          `https://corona.lmao.ninja/v2/countries/kenya`
         )
         this.$store.commit('updatetStats', stats.data)
         this.$store.commit('hideError')

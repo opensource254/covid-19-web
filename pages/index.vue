@@ -24,6 +24,7 @@
 
 <script>
 export default {
+  transition: 'slide-y-transition',
   head() {
     return {
       title: 'Covid_19 Kenya',

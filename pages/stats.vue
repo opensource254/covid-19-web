@@ -148,6 +148,7 @@
 
 <script>
 export default {
+  transition: 'scroll-y-reverse-transition',
   computed: {
     stats() {
       return this.$store.state.stats

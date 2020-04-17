@@ -53,6 +53,7 @@
 
 <script>
 export default {
+  transition: 'scroll-y-reverse-transition',
   data() {
     return {
       theme: false

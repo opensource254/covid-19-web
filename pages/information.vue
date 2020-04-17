@@ -40,6 +40,7 @@
 
 <script>
 export default {
+  transition: 'slide-x-reverse-transition',
   head() {
     return {
       title: 'Information',

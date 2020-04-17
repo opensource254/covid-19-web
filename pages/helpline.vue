@@ -51,6 +51,7 @@
 
 <script>
 export default {
+  transition: 'scroll-y-reverse-transition',
   head() {
     return {
       title: 'Helpline',

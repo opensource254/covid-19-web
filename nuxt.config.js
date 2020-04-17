@@ -86,9 +86,15 @@ module.exports = {
         },
         services: {
           auth: true,
-          messaging: {
-            createServiceWorker: true
-          }
+          firestore: true,
+          functions: true,
+          storage: true,
+          realtimeDb: true,
+          messaging: true,
+          performance: true,
+          analytics: true,
+          remoteConfig: true
+        
         }
       }
     ]

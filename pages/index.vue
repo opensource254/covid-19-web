@@ -10,7 +10,7 @@
     <v-col cols="12" md="6">
       <v-img contain height="325" src="/images/infected.png"></v-img>
     </v-col>
-    <v-col cols="12" md="7">
+    <v-col cols="12" md="4">
       <v-btn depressed color="primary" block large to="/helpline"
         >Get Help <v-icon>mdi-help </v-icon>
       </v-btn>
@@ -46,7 +46,8 @@ export default {
         },
         {
           property: 'og:description',
-          content: 'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
+          content:
+            'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
         }
       ]
     }

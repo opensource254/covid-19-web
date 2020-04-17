@@ -1,12 +1,12 @@
 <template>
-  <v-app>
+  <v-app class="raleway">
     <v-content>
       <v-container fluid>
         <nuxt />
       </v-container>
     </v-content>
 
-    <v-bottom-navigation grow color="primary" app>
+    <v-bottom-navigation shift grow color="primary" app>
       <v-btn to="/">
         <span>Home</span>
         <v-icon>mdi-home</v-icon>
@@ -36,4 +36,9 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+.raleway {
+  font-family: 'Raleway', sans-serif;
+}
+</style>

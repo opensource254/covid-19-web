@@ -50,20 +50,6 @@ export default {
           name: 'description',
           content:
             'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
-        },
-        { property: 'og:title', content: 'Covid_19 Kenya' },
-        { property: 'og:site_name', content: 'Information' },
-        { property: 'og:type', content: 'website' },
-        // Should the the same as your canonical link, see below.
-        { property: 'og:url', content: 'https://covid19kenya.site' },
-        {
-          property: 'og:image',
-          content: 'https://covid19kenya.site/images/infected.png'
-        },
-        {
-          property: 'og:description',
-          content:
-            'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
         }
       ]
     }

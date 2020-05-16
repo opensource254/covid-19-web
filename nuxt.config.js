@@ -11,42 +11,15 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { name: 'theme-color', content: '#04c0ff' },
-      // Twitter card
-      { name: 'twitter:card', content: 'summary' },
-      {
-        name: 'twitter:site',
-        content: 'https://www.twitter.com/StanleyMasinde_'
-      },
-      { name: 'twitter:title', content: 'Covid_19 Kenya' },
-      {
-        name: 'twitter:description',
-        content: process.env.npm_package_description
-      },
-      // Your twitter handle, if you have one.
-      { name: 'twitter:creator', content: '@StanleyMasinde_' },
-      {
-        name: 'twitter:image:src',
-        content: 'https://covid19kenya.site/images/infected.png'
-      },
-
-      // Google / Schema.org markup:
-      { itemprop: 'name', content: 'Covid_19 Kenya' },
-      { itemprop: 'description', content: process.env.npm_package_description },
-      {
-        itemprop: 'image',
-        content: 'https://covid19kenya.site/images/infected.png'
-      }
     ],
     link: [
-      { rel: 'manifest', href: '/manifest.json' },
       { rel: 'stylesheet', href: '/app.css' }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: '#fff' },
+  loading: { color: '#04c0ff' },
   /*
    ** Global CSS
    */
@@ -107,6 +80,13 @@ module.exports = {
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  pwa: {
+    meta: {
+      name: 'Covid_19 Kenya',
+      short_name: 'Covid19Kenya',
+      ogImage: '/infected.png'
+    }
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module

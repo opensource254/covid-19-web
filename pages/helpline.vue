@@ -62,19 +62,6 @@ export default {
           name: 'description',
           content:
             'COVID_19 contact information Kenya. All the helpline numbers are toll free'
-        },
-        { property: 'og:title', content: 'Covid_19 Kenya' },
-        { property: 'og:site_name', content: 'Contact Info' },
-        { property: 'og:type', content: 'website' },
-        // Should the the same as your canonical link, see below.
-        { property: 'og:url', content: 'https://covid19kenya.site' },
-        {
-          property: 'og:image',
-          content: 'https://covid19kenya.site/images/infected.png'
-        },
-        {
-          property: 'og:description',
-          content: 'Get All COVID_19 contact information in Kenya'
         }
       ]
     }

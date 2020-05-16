@@ -80,6 +80,19 @@ export default {
           .catch(() => {})
       }
     }
+  },
+  head() {
+    return {
+      title: 'Latest Updates From MOH',
+      titleTemplate: null,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Get the latest updates from MOH Kenya'
+        }
+      ]
+    }
   }
 }
 </script>

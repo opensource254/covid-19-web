@@ -206,20 +206,6 @@ export default {
           name: 'description',
           content:
             'A breakdown of the latest COVID_19 cases in kenya. The updates are in realtime'
-        },
-        { property: 'og:title', content: 'Covid_19 Kenya' },
-        { property: 'og:site_name', content: 'Covid 19 Kenya' },
-        { property: 'og:type', content: 'website' },
-        // Should the the same as your canonical link, see below.
-        { property: 'og:url', content: 'https://covid19kenya.site' },
-        {
-          property: 'og:image',
-          content: 'https://covid19kenya.site/images/infected.png'
-        },
-        {
-          property: 'og:description',
-          content:
-            'A breakdown of the latest COVID_19 cases in kenya. The updates are in realtime'
         }
       ]
     }

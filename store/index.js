@@ -55,8 +55,8 @@ export const getters = {
           tweet: textAsArray.join(' ')
         }
       })
-
       return news
     }
+    return []
   }
 }

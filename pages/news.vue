@@ -21,7 +21,11 @@
             <v-btn text color="primary" target="_blank" :href="item.tweetLink">
               View More
             </v-btn>
-            <v-btn text color="primary" target="_blank" :href="item.tweetLink">
+            <v-btn
+              text
+              color="primary"
+              @click.prevent="sharelink(item.tweetLink)"
+            >
               Share
             </v-btn>
           </v-card-actions>
@@ -61,7 +65,21 @@ export default {
 
     this.$store.commit('addNews', news.data)
   },
-  fetchOnServer: false
+  fetchOnServer: false,
+  methods: {
+    sharelink(link) {
+      if (navigator.share) {
+        navigator
+          .share({
+            title: 'Check out this update from MOH',
+            text: `Checkout this update by the ministry of health Kenya on COVID 19`,
+            url: link
+          })
+          .then(() => true)
+          .catch(() => {})
+      }
+    }
+  }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <v-app class="raleway">
     <v-content>
-      <v-container fluid>
+      <v-container>
         <nuxt />
       </v-container>
     </v-content>
@@ -15,6 +15,11 @@
       <v-btn to="/stats">
         <span>Stats</span>
         <v-icon>mdi-chart-bar</v-icon>
+      </v-btn>
+
+      <v-btn to="/news">
+        <span>News</span>
+        <v-icon>mdi-newspaper</v-icon>
       </v-btn>
 
       <v-btn to="/precautions">

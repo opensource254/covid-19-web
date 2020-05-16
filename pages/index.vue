@@ -18,6 +18,10 @@
         >Settings
         <v-icon>mdi-cog-outline</v-icon>
       </v-btn>
+      <v-btn depressed color="primary" class="mt-1" block large to="/news"
+        >News
+        <v-icon>mdi-newspaper</v-icon>
+      </v-btn>
     </v-col>
   </v-row>
 </template>

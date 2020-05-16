@@ -13,7 +13,7 @@
             Ministry Of Health
           </v-card-title>
           <v-card-subtitle>
-            {{ item.created_at }}
+            {{ $moment(item.created_at).fromNow() }}
           </v-card-subtitle>
           <v-card-text>
             <h3 v-html="item.tweet"></h3>

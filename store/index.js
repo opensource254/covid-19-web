@@ -37,6 +37,7 @@ export const getters = {
     // Try getting the news from state
     if (state.news.length > 0) {
       const news = state.news.map((item) => {
+        let media
         let tweetLink
         const textAsArray = item.tweet.split(' ')
         textAsArray.forEach((tweet) => {
@@ -49,10 +50,15 @@ export const getters = {
           }
         })
 
+        if (item.media) {
+          media = item.media[0].media_url_https
+        }
+
         return {
           created_at: item.created_at,
           tweetLink,
-          tweet: textAsArray.join(' ')
+          tweet: textAsArray.join(' '),
+          media_url: media
         }
       })
       return news

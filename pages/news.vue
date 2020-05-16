@@ -8,6 +8,7 @@
         md="6"
       >
         <v-card>
+          <v-img :src="item.media_url"></v-img>
           <v-card-title>
             Ministry Of Health
           </v-card-title>

@@ -6,9 +6,11 @@
 > Available here [Covid-19-kenya](https://covid19kenya.site)
 
 ## Screenshots
-<img src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot01.png" width="250"/> <img
- src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot02.png" width="250"/> <img
- src="https://raw.githubusercontent.com/Opensource-254/covid-19-web/master/assets/screenshots/screenshot03.png" width="250"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707618/Screenshot_20200517-121342_ov1cuy.png" width="250"/> 
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121314_dlzp0p.png" width="250"/> 
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121351_laghz1.png" width="250"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121328_aekmur.png" width="250"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121302_vqxenh.png" width="250"/>
 
 
 

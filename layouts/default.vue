@@ -37,6 +37,8 @@
 
 <script>
 export default {
-  mounted() {}
+  mounted() {
+    this.$fireMess.getToken()
+  }
 }
 </script>

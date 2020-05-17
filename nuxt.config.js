@@ -10,11 +10,9 @@ module.exports = {
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
-      { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+      { name: 'viewport', content: 'width=device-width, initial-scale=1' }
     ],
-    link: [
-      { rel: 'stylesheet', href: '/app.css' }
-    ]
+    link: [{ rel: 'stylesheet', href: '/app.css' }]
   },
   /*
    ** Customize the progress-bar color
@@ -62,15 +60,17 @@ module.exports = {
           measurementId: 'G-FQHBN20J3E'
         },
         services: {
-          auth: true,
-          firestore: true,
-          functions: true,
-          storage: true,
-          realtimeDb: true,
-          messaging: true,
+          auth: false,
+          firestore: false,
+          functions: false,
+          storage: false,
+          realtimeDb: false,
+          messaging: {
+            createServiceWorker: true
+          },
           performance: true,
           analytics: true,
-          remoteConfig: true
+          remoteConfig: false
         }
       }
     ]

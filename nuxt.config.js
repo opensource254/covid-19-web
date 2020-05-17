@@ -85,6 +85,13 @@ module.exports = {
       name: 'Covid_19 Kenya',
       short_name: 'Covid19Kenya',
       ogImage: '/infected.png'
+    },
+    workbox: {
+      offlineAnalytics: true,
+      runtimeCaching: [
+        'https://twitter.covid19kenya.site/twitter/MOH_kenya/recent',
+        'https://corona.lmao.ninja/v2/countries/kenya'
+      ]
     }
   },
   /*

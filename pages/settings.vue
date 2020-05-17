@@ -5,7 +5,7 @@
         <v-list-item>
           <div>
             <h1 class="display-1">Covid_19 Kenya</h1>
-            Version: v1.2
+            Version: v2.1
           </div>
         </v-list-item>
       </v-list>

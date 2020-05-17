@@ -5,11 +5,9 @@
 > An app to give info about covid 19 in Kenya.
 > Available here [Covid-19-kenya](https://covid19kenya.site)
 
-## Screenshots
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707618/Screenshot_20200517-121342_ov1cuy.png" width="200"/> 
+## Screenshots 
 <img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121314_dlzp0p.png" width="200"/> 
 <img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121351_laghz1.png" width="200"/>
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121328_aekmur.png" width="200"/>
 <img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121302_vqxenh.png" width="200"/>
 
 

@@ -1,36 +1,54 @@
 <template>
   <div>
     <v-row justify="center">
-      <v-col
-        v-for="(item, index) in $store.getters.getNews"
-        :key="index"
-        cols="10"
-        md="6"
-      >
-        <v-card>
-          <v-img :src="item.media_url"></v-img>
-          <v-card-title>
-            Ministry Of Health
-          </v-card-title>
-          <v-card-subtitle>
-            {{ $moment(item.created_at).fromNow() }}
-          </v-card-subtitle>
-          <v-card-text>
-            <h3 v-html="item.tweet"></h3>
-          </v-card-text>
-          <v-card-actions>
-            <v-btn text color="primary" target="_blank" :href="item.tweetLink">
-              View More
-            </v-btn>
-            <v-btn
-              text
-              color="primary"
-              @click.prevent="sharelink(item.tweetLink)"
-            >
-              Share
-            </v-btn>
-          </v-card-actions>
-        </v-card>
+      <v-col cols="12" sm="8" md="8">
+        <v-row justify="center">
+          <v-col
+            v-for="(item, index) in $store.getters.getNews"
+            :key="index"
+            cols="12"
+            md="6"
+          >
+            <v-card outlined flat>
+              <v-list-item>
+                <v-list-item-avatar color="grey">
+                  <v-avatar>
+                    <v-img
+                      src="https://pbs.twimg.com/profile_images/721965025859121152/342LCLJq_400x400.jpg"
+                    ></v-img>
+                  </v-avatar>
+                </v-list-item-avatar>
+                <v-list-item-content>
+                  <v-list-item-title class="headline">{{
+                    item.user
+                  }}</v-list-item-title>
+                  <v-list-item-subtitle>{{
+                    $moment(new Date(item.created_at)).fromNow()
+                  }}</v-list-item-subtitle>
+                </v-list-item-content>
+              </v-list-item>
+              <v-img max-height="500" :src="item.media_url"></v-img>
+              <v-card-text>
+                <h3 v-html="item.tweet"></h3>
+              </v-card-text>
+              <v-card-actions>
+                <v-row justify="center">
+                  <v-col cols="12">
+                    <v-btn
+                      x-large
+                      text
+                      color="primary"
+                      icon
+                      @click.prevent="sharelink(item.tweetLink)"
+                    >
+                      <v-icon>mdi-share-variant</v-icon>
+                    </v-btn>
+                  </v-col>
+                </v-row>
+              </v-card-actions>
+            </v-card>
+          </v-col>
+        </v-row>
       </v-col>
     </v-row>
 

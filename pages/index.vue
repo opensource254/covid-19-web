@@ -10,7 +10,7 @@
     <v-col cols="12" md="6">
       <v-img contain height="325" src="/images/infected.png"></v-img>
     </v-col>
-    <v-col cols="12" md="4">
+    <v-col cols="12" sm="6" md="4">
       <v-btn depressed color="primary" block large to="/helpline"
         >Get Help <v-icon>mdi-help </v-icon>
       </v-btn>

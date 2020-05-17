@@ -58,7 +58,8 @@ export const getters = {
           created_at: item.created_at,
           tweetLink,
           tweet: textAsArray.join(' '),
-          media_url: media
+          media_url: media,
+          user: item.user
         }
       })
       return news

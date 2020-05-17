@@ -6,11 +6,11 @@
 > Available here [Covid-19-kenya](https://covid19kenya.site)
 
 ## Screenshots
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707618/Screenshot_20200517-121342_ov1cuy.png" width="250"/> 
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121314_dlzp0p.png" width="250"/> 
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121351_laghz1.png" width="250"/>
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121328_aekmur.png" width="250"/>
-<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121302_vqxenh.png" width="250"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707618/Screenshot_20200517-121342_ov1cuy.png" width="200"/> 
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121314_dlzp0p.png" width="200"/> 
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121351_laghz1.png" width="200"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121328_aekmur.png" width="200"/>
+<img src="https://res.cloudinary.com/streetcoder/image/upload/v1589707619/Screenshot_20200517-121302_vqxenh.png" width="200"/>
 
 
 
@@ -18,9 +18,13 @@
 ## Data Sources
 [Ministry Of Health kenya  ](http://www.health.go.ke/)
 
-[OpenSource 254 corona-api  ](https://Opensource-254.github.io/corona-api)
+[MOH Twitter](https://twitter.com/MOH_kenya)
 
-[world meters  ](https://https://www.worldometers.info/coronavirus/)
+[OpenSource 254 corona-api  ](https://opensource254.github.io/corona-api)
+
+[OpenSource 254 Twitter-api](https://github.com/opensource254/twitter)
+
+[world meters](https://https://www.worldometers.info/coronavirus/)
 
 [CSSEGISandData  ](https://github.com/CSSEGISandData/COVID-19/tree/master/csse_covid_19_data)
 

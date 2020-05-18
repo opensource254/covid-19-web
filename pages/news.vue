@@ -79,7 +79,7 @@
 export default {
   async fetch() {
     const news = await this.$axios.get(
-      'https://twitter.covid19kenya.site/twitter/MOH_kenya/recent'
+      'https://twitter.covid19kenya.site/api/v2/moh_kenya?count=50'
     )
 
     this.$store.commit('addNews', news.data)

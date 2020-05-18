@@ -27,8 +27,8 @@ export const mutations = {
     state.hasError = false
   },
   addNews(state, news) {
-    localStorage.news = JSON.stringify(news.tweets)
-    state.news = news.tweets
+    localStorage.news = JSON.stringify(news)
+    state.news = news
   }
 }
 

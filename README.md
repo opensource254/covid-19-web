@@ -3,7 +3,7 @@
 [![Netlify Status](https://api.netlify.com/api/v1/badges/031d53f7-4487-4fb6-b0c4-175a09115ee4/deploy-status)](https://app.netlify.com/sites/covid19kenya/deploys)
 
 > An app to give info about covid 19 in Kenya.
-> Available here [Covid-19-kenya](https://covid19kenya.site)
+> Available here [Covid-19-kenya](https://covid19kenya.netlify.app)
 
 ## Screenshots 
 <div align="center">

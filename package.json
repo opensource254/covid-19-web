@@ -20,7 +20,7 @@
     "@nuxtjs/pwa": "^3.0.0-0",
     "cross-env": "^5.2.0",
     "express": "^4.16.4",
-    "firebase": "^7.14.4",
+    "firebase": "^7.24.0",
     "nuxt": "^2.12.2"
   },
   "devDependencies": {

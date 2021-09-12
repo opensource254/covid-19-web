@@ -18,7 +18,7 @@
     "@nuxtjs/firebase": "^5.2.0",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.3.5",
-    "cross-env": "^5.2.0",
+    "cross-env": "^7.0.3",
     "express": "^4.16.4",
     "firebase": "^7.24.0",
     "nuxt": "^2.15.8"

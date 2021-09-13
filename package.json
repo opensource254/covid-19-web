@@ -15,7 +15,7 @@
   "dependencies": {
     "@nuxtjs/axios": "^5.10.3",
     "@nuxtjs/dotenv": "^1.4.0",
-    "@nuxtjs/firebase": "^5.2.0",
+    "@nuxtjs/firebase": "^6.1.1",
     "@nuxtjs/moment": "^1.6.1",
     "@nuxtjs/pwa": "^3.3.5",
     "cross-env": "^5.2.0",

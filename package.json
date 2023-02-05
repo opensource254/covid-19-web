@@ -39,6 +39,6 @@
     "nodemon": "^2.0.20",
     "prettier": "^2.8.3",
     "stylelint": "^14.16.1",
-    "vue-jest": "^4.0.0-0"
+    "vue-jest": "^4.0.1"
   }
 }

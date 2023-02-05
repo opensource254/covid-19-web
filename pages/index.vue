@@ -1,11 +1,9 @@
 <template>
   <v-row justify="center" align="center">
     <v-col cols="12">
-      <Marquee
-        ><h2 class="text--secondary">
+      <h2 class="text--secondary">
           FEVER . HEADACHE . DRY COUGH. FATIGUE . DIFFICULTY IN BREATHING
-        </h2></Marquee
-      >
+        </h2>
     </v-col>
     <v-col cols="12" md="6">
       <v-img contain height="325" src="/images/infected.png"></v-img>

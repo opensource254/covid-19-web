@@ -2,7 +2,7 @@
   "name": "covid-19-kenya",
   "version": "2.2.0",
   "description": "Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you",
-  "author": "Stanley Masinde",
+  "author": "Oensource254",
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",

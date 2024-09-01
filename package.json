@@ -38,7 +38,7 @@
     "jest": "^29.7.0",
     "nodemon": "^3.1.4",
     "prettier": "^3.3.3",
-    "stylelint": "^16.6.1",
+    "stylelint": "^16.9.0",
     "vue-jest": "^4.0.0-0"
   },
   "main": ".eslintrc.js",

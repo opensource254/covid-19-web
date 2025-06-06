@@ -25,7 +25,7 @@ export default defineNuxtConfig({
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{ src: '~plugins/ga.js', mode: 'client' }],
+  plugins: [{ src: '~/plugins/ga.client.js', mode: 'client' }], // Updated path after rename
   /*
    ** Nuxt.js dev-modules
    */

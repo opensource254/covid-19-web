@@ -19,7 +19,7 @@
                   </v-avatar>
                 </v-list-item-avatar>
                 <v-list-item-content>
-                  <v-list-item-title class="text-h6">{{ <!-- Vuetify 3 uses text-h6 for headline -->
+                  <v-list-item-title class="text-h6">{{
                     item.user
                   }}</v-list-item-title>
                   <v-list-item-subtitle>{{

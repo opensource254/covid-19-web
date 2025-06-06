@@ -91,3 +91,6 @@ sw.*
 
 # Firebase SW
 static/firebase-messaging-sw.js
+
+# Nuxt 3 build output
+.output/

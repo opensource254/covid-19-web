@@ -1,8 +1,8 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" md="6" class="body-1">
-      <v-list three-line dense shaped flat expand>
-        <v-subheader>General Information</v-subheader>
+    <v-col cols="12" md="6" class="text-body-1"> <!-- Replaced body-1 with text-body-1 -->
+      <v-list three-line density="compact" shaped flat> <!-- Replaced dense, removed expand -->
+        <p class="text-subtitle-1 font-weight-bold mt-4 mb-2">General Information</p> <!-- Replaced v-subheader -->
         <v-list-item>
           Corona Virus Disease 2019 (COVID19) is a new respiratory illness that
           can easily be spread from person to person.
@@ -38,23 +38,20 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'slide-x-reverse-transition',
-  head() {
-    return {
-      title: 'Information',
-      titleTemplate: null,
-      meta: [
-        {
-          name: 'description',
-          content:
-            'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Information',
+  // titleTemplate: null, // Handled by global config or layout
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)',
+    },
+  ],
+})
 </script>
 
 <style></style>

@@ -1,9 +1,11 @@
-// Ref: https://github.com/nuxt-community/vuetify-module#customvariables
-//
-// The variables you want to modify
-// $font-size-root: 20px;
-$btn-border-radius: 4px;
-$input-top-spacing: 9px !default;
-$btn-text-transform: 'capitalize';
-$card-border-radius: 15px;
-$sheet-border-radius: 15px 15px 0px 0px;
+// Modern Vuetify 3 SASS variable overrides
+// Ref: https://vuetifyjs.com/en/features/sass-variables/#component-specific-variables
+// Ref: https://vuetifyjs.com/en/styles/settings/#forwarding-with-new-values
+
+@forward 'vuetify/settings' with (
+  $button-border-radius: 4px,
+  // $input-top-spacing: 9px, // V3 equivalent unclear, may need different approach
+  $button-text-transform: 'capitalize',
+  $card-border-radius: 15px,
+  $sheet-border-radius: 15px 15px 0px 0px
+);

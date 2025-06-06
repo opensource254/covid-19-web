@@ -12,7 +12,8 @@ export default defineNuxtConfig({
         { property: 'og:image', content: '/infected.png' } // Added og:image
       ],
       link: []
-    }
+    },
+    baseURL: '/covid-19-web/'
   },
   /*
    ** Customize the progress-bar color

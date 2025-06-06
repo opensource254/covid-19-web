@@ -9,23 +9,21 @@
             cols="12"
             md="6"
           >
-            <v-card outlined flat>
+            <v-card variant="outlined" flat> <!-- Replaced outlined -->
               <v-list-item>
-                <v-list-item-avatar color="grey">
-                  <v-avatar>
+                <template #prepend> <!-- Added template #prepend for avatar -->
+                  <v-avatar color="grey">
                     <v-img
                       src="https://pbs.twimg.com/profile_images/721965025859121152/342LCLJq_400x400.jpg"
                     ></v-img>
                   </v-avatar>
-                </v-list-item-avatar>
-                <v-list-item-content>
-                  <v-list-item-title class="text-h6">{{
-                    item.user
-                  }}</v-list-item-title>
-                  <v-list-item-subtitle>{{
-                    moment(new Date(item.created_at)).fromNow()
-                  }}</v-list-item-subtitle>
-                </v-list-item-content>
+                </template>
+                <v-list-item-title class="text-h6">{{
+                  item.user
+                }}</v-list-item-title>
+                <v-list-item-subtitle>{{
+                  dayjs(new Date(item.created_at)).fromNow() // Already changed to dayjs in prev step
+                }}</v-list-item-subtitle>
               </v-list-item>
               <v-img max-height="500" :src="item.media_url"></v-img>
               <v-card-text>
@@ -35,8 +33,8 @@
                 <v-row justify="center">
                   <v-col cols="12">
                     <v-btn
-                      x-large
-                      text
+                      size="x-large"
+                      variant="text"
                       color="primary"
                       icon
                       @click.prevent="sharelink(item.tweetLink)"

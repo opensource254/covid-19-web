@@ -11,7 +11,7 @@ export default defineNuxtConfig({
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { property: 'og:image', content: '/infected.png' } // Added og:image
       ],
-      link: [{ rel: 'stylesheet', href: '/app.css' }]
+      link: [] // Removed app.css link
     }
   },
   /*
@@ -21,7 +21,7 @@ export default defineNuxtConfig({
   /*
    ** Global CSS
    */
-  css: [],
+  css: ['~/assets/css/app.css'], // Added app.css here
   /*
    ** Plugins to load before mounting the App
    */
@@ -145,15 +145,16 @@ export default defineNuxtConfig({
   vuetify: {
     /* module options */
     moduleOptions: {
-      treeshaking: true, // Enabled by default, but good to be explicit
-      useIconCDN: true, // To use default icon font (MDI)
-      // Option for vite-plugin-vuetify styles
-      styles: 'sass' // If using SASS/SCSS for variables, or specify configFile
-      // styles: { configFile: 'assets/variables.scss'} // This should work with vite-plugin-vuetify
+      treeshaking: true,
+      useIconCDN: false, // Use local @mdi/font
+      styles: 'sass'
     },
     /* vuetify options */
     vuetifyOptions: {
-      ssr: true, // Enable SSR, important for Nuxt 3
+      ssr: true,
+      icons: { // Explicitly define MDI as the default icon set
+        defaultSet: 'mdi',
+      },
       theme: {
         defaultTheme: 'dark',
         themes: {
@@ -194,7 +195,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: '@use "~/assets/variables.scss" as *;'
+          additionalData: '@import "~/assets/variables.scss";' // Changed from @use to @import
         }
       }
     }

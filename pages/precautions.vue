@@ -1,13 +1,13 @@
 <template>
   <v-row justify="center">
     <v-col cols="12" md="6">
-      <v-expansion-panels popout accordion>
+      <v-expansion-panels accordion> <!-- Removed popout -->
         <v-expansion-panel>
           <v-expansion-panel-header
             >Signs and symptoms</v-expansion-panel-header
           >
           <v-expansion-panel-content>
-            <v-list dense rounded shaped>
+            <v-list density="compact" rounded shaped> <!-- Replaced dense -->
               <v-list-item>
                 <v-list-item-title>High Body Temperature</v-list-item-title>
               </v-list-item>
@@ -27,10 +27,10 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
 
-        <v-expansion-panel class="body-2">
+        <v-expansion-panel class="text-body-2"> <!-- Replaced body-2 -->
           <v-expansion-panel-header>How it is spread</v-expansion-panel-header>
           <v-expansion-panel-content>
-            <v-list dense>
+            <v-list density="compact"> <!-- Replaced dense -->
               <v-list-item>
                 Through respiratory droplets from an infected person land on
                 one's eyes, nose or mouth
@@ -49,12 +49,12 @@
           </v-expansion-panel-content>
         </v-expansion-panel>
 
-        <v-expansion-panel class="body-2">
+        <v-expansion-panel class="text-body-2"> <!-- Replaced body-2 -->
           <v-expansion-panel-header
             >How to stop the spread</v-expansion-panel-header
           >
           <v-expansion-panel-content>
-            <v-list dense>
+            <v-list density="compact"> <!-- Replaced dense -->
               <v-list-item>
                 Wash Your hands regularly with soap and running water or boiled
                 cooled water
@@ -89,7 +89,7 @@
         </v-expansion-panel>
       </v-expansion-panels>
     </v-col>
-    <v-col cols="12" md="6" class="body-2">
+    <v-col cols="12" md="6" class="text-body-2"> <!-- Replaced body-2 -->
       <h3>What is self quarantine?</h3>
       Self qaurantine is an act of individuals who may have been exposed to
       COVID-19 separating themselves for for 14 days in order to monitor if they

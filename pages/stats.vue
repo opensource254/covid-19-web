@@ -15,91 +15,91 @@
     <v-container>
       <v-row v-if="!loading && stats" align="center" justify="center">
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Total Cases
-            <h3 class="raleway primary--text">
+            <h3 class="raleway text-primary"> <!-- Replaced primary--text -->
               {{ formatNumber(stats.cases) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Cases Today
-            <h3 class="raleway yellow--text">
+            <h3 class="raleway text-yellow"> <!-- Replaced yellow--text -->
               {{ formatNumber(stats.todayCases) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Critical Cases
-            <h3 class="raleway red--text">
+            <h3 class="raleway text-red"> <!-- Replaced red--text -->
               {{ formatNumber(stats.critical) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Cases Per Million
-            <h3 class="raleway indigo--text">
+            <h3 class="raleway text-indigo"> <!-- Replaced indigo--text -->
               {{ formatNumber(stats.casesPerOneMillion) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Recovered
-            <h3 class="raleway success--text">
+            <h3 class="raleway text-success"> <!-- Replaced success--text -->
               {{ formatNumber(stats.recovered) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Active Cases
-            <h3 class="raleway info--text">{{ formatNumber(stats.active) }}</h3>
+            <h3 class="raleway text-info">{{ formatNumber(stats.active) }}</h3> <!-- Replaced info--text -->
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Total Deaths
-            <h3 class="raleway error--text">
+            <h3 class="raleway text-error"> <!-- Replaced error--text -->
               {{ formatNumber(stats.deaths) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Deaths per Million
-            <h3 class="raleway error--text">
+            <h3 class="raleway text-error"> <!-- Replaced error--text -->
               {{ formatNumber(stats.deathsPerOneMillion) }}
             </h3>
           </v-card>
         </v-col>
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Today Deaths
-            <h3 class="raleway warning--text">
+            <h3 class="raleway text-warning"> <!-- Replaced warning--text -->
               {{ formatNumber(stats.todayDeaths) }}
             </h3>
           </v-card>
         </v-col>
 
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined></v-card> <!-- Empty card, kept from original -->
+          <v-card flat variant="outlined"></v-card> <!-- Empty card, kept from original, replaced outlined -->
         </v-col>
 
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Tests
-            <h3 class="raleway teal--text">{{ formatNumber(stats.tests) }}</h3>
+            <h3 class="raleway text-teal">{{ formatNumber(stats.tests) }}</h3> <!-- Replaced teal--text -->
           </v-card>
         </v-col>
 
         <v-col cols="6" md="6" class="text-center">
-          <v-card flat outlined>
+          <v-card flat variant="outlined"> <!-- Replaced outlined -->
             Tests Per Million
-            <h3 class="raleway teal--text">
+            <h3 class="raleway text-teal"> <!-- Replaced teal--text -->
               {{ formatNumber(stats.testsPerOneMillion) }}
             </h3>
           </v-card>
@@ -121,7 +121,7 @@
 
     <v-row v-if="!loading && stats">
       <v-col>
-        <h3 class="raleway font-weight-medium body-1">
+        <h3 class="raleway font-weight-medium text-body-1"> <!-- Replaced body-1 -->
           Last Update: {{ moment(stats.updated).fromNow() }}
         </h3>
       </v-col>

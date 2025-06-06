@@ -1,44 +1,41 @@
 <template>
   <v-row align="center" justify="center">
     <v-col cols="12" md="6">
-      <p class="title">Reporting illness</p>
+      <p class="text-h6">Reporting illness</p> <!-- Replaced class="title" -->
       If you feel unwell, have a <u>cold</u> or a <u>cough</u> or fever, please
       call <a href="tel:719">719</a> or text <a href="tel:*719#">*719#</a> which
       is a toll-free number provided by the Government of Kenya.
       <v-list flat>
-        <v-subheader>
+        <p class="text-subtitle-1 font-weight-bold mt-4 mb-2"> <!-- Replaced v-subheader -->
           You can also call the following County Hotline numbers:
-        </v-subheader>
+        </p>
         <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title> Nairobi </v-list-item-title> (tollfree) /
-            0732353535</v-list-item-content
-          >
-          <v-list-item-action>
-            <v-btn large color="primary" icon href="tel:0732353535">
+          <v-list-item-title> Nairobi </v-list-item-title> (tollfree) /
+          0732353535
+          <template #append> <!-- Added template #append for button -->
+            <v-btn size="large" color="primary" icon href="tel:0732353535">
               <v-icon>
                 mdi-phone
               </v-icon>
             </v-btn>
-          </v-list-item-action>
+          </template>
         </v-list-item>
         <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title> Garissa</v-list-item-title> 0111207207 /
-            0110040836 / 011040708</v-list-item-content
-          >
-          <v-btn large color="primary" icon href="tel:0111207207">
-            <v-icon>
-              mdi-phone
-            </v-icon>
-          </v-btn>
+          <v-list-item-title> Garissa</v-list-item-title> 0111207207 /
+          0110040836 / 011040708
+          <template #append> <!-- Added template #append for button -->
+            <v-btn size="large" color="primary" icon href="tel:0111207207">
+              <v-icon>
+                mdi-phone
+              </v-icon>
+            </v-btn>
+          </template>
         </v-list-item>
         <v-list-item>
-          <v-list-item-content>
-            <v-list-item-title> Turkana</v-list-item-title>
-            0758722023</v-list-item-content
-          >
-          <v-btn large color="primary" icon href="tel:0758722023">
+          <v-list-item-title> Turkana</v-list-item-title>
+          0758722023
+          <template #append> <!-- Added template #append for button -->
+            <v-btn size="large" color="primary" icon href="tel:0758722023">
             <v-icon>
               mdi-phone
             </v-icon>

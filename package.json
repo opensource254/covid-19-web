@@ -19,7 +19,8 @@
     "firebase": "^10.0.0",
     "nuxt": "^3.16.0",
     "vuefire": "^3.1.0",
-    "vuetify": "^3.5.0"
+    "vuetify": "^3.5.0",
+    "@mdi/font": "^7.4.47"
   },
   "devDependencies": {
     "@vite-pwa/nuxt": "^0.7.0",

@@ -1,8 +1,8 @@
 <template>
   <v-row justify="center">
-    <v-col cols="12" md="6" class="body-1">
-      <v-list three-line dense shaped flat expand>
-        <v-subheader>General Information</v-subheader>
+    <v-col cols="12" md="6" class="text-body-1"> <!-- Replaced body-1 with text-body-1 -->
+      <v-list three-line density="compact" shaped flat> <!-- Replaced dense, removed expand -->
+        <p class="text-subtitle-1 font-weight-bold mt-4 mb-2">General Information</p> <!-- Replaced v-subheader -->
         <v-list-item>
           Corona Virus Disease 2019 (COVID19) is a new respiratory illness that
           can easily be spread from person to person.

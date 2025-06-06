@@ -40,6 +40,7 @@
               mdi-phone
             </v-icon>
           </v-btn>
+          </template>
         </v-list-item>
       </v-list>
     </v-col>

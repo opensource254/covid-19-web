@@ -49,24 +49,21 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'scroll-y-reverse-transition',
-  head() {
-    return {
-      title: 'Helpline',
-      titleTemplate: null,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'COVID_19 contact information Kenya. All the helpline numbers are toll free'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { useHead } from '#imports' // Or from 'nuxt/app'
+
+useHead({
+  title: 'Helpline',
+  // titleTemplate: null, // Nuxt 3 handles this via global config or layout
+  meta: [
+    {
+      // hid: 'description', // hid is not standard, use name
+      name: 'description',
+      content:
+        'COVID_19 contact information Kenya. All the helpline numbers are toll free',
+    },
+  ],
+})
 </script>
 
 <style></style>

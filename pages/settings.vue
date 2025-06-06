@@ -51,33 +51,37 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'scroll-y-reverse-transition',
-  data() {
-    return {
-      theme: false
-    }
-  },
-  methods: {
-    updateTheme() {
-      this.$vuetify.theme.dark = !this.$vuetify.theme.dark
-    }
-  },
-  head() {
-    return {
-      title: 'Settings',
-      titleTemplate: null,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'App Settings'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { ref, watch } from 'vue'
+import { useTheme } from 'vuetify'
+import { useHead } from '#imports'
+
+const themeManager = useTheme()
+
+// Initialize switch state based on current Vuetify theme name
+const internalSwitchState = ref(themeManager.global.name.value === 'dark')
+
+// Watch for changes in the switch state and update Vuetify theme
+watch(internalSwitchState, (isDark) => {
+  themeManager.global.name.value = isDark ? 'dark' : 'light'
+})
+
+// Watch for external changes to Vuetify's theme name and update switch
+watch(() => themeManager.global.name.value, (newThemeName) => {
+  internalSwitchState.value = newThemeName === 'dark'
+})
+
+useHead({
+  title: 'Settings',
+  // titleTemplate: null, // Handled by global config or layout
+  meta: [
+    {
+      // hid: 'description', // hid is not standard
+      name: 'description',
+      content: 'App Settings',
+    },
+  ],
+})
 </script>
 
 <style></style>

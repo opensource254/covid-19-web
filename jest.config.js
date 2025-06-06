@@ -1,13 +1,15 @@
 module.exports = {
+  testEnvironment: 'jsdom', // Added
   moduleNameMapper: {
     '^@/(.*)$': '<rootDir>/$1',
-    '^~/(.*)$': '<rootDir>/$1',
-    '^vue$': 'vue/dist/vue.common.js'
+    '^~/(.*)$': '<rootDir>/$1'
+    // '^vue$': 'vue/dist/vue.common.js' // Removed
   },
-  moduleFileExtensions: ['js', 'vue', 'json'],
+  moduleFileExtensions: ['js', 'ts', 'vue', 'json'], // Added 'ts'
   transform: {
     '^.+\\.js$': 'babel-jest',
-    '.*\\.(vue)$': 'vue-jest'
+    '^.+\\.tsx?$': 'ts-jest', // Added for TypeScript
+    '.*\\.(vue)$': '@vue/vue3-jest' // Changed to @vue/vue3-jest
   },
   collectCoverage: true,
   collectCoverageFrom: [

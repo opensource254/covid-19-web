@@ -24,24 +24,21 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'slide-y-transition',
-  head() {
-    return {
-      title: 'Covid_19 Kenya',
-      titleTemplate: null,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Covid_19 Kenya',
+  // titleTemplate: null, // Handled by global config or layout
+  meta: [
+    {
+      // hid: 'description', // hid is not standard, use name
+      name: 'description',
+      content:
+        'Corona virus. Covid_19 Kenya. Information and help about covid 19 kenya. This app will give all that to you',
+    },
+  ],
+})
 </script>
 
 <style></style>

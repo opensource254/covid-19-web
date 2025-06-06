@@ -126,24 +126,21 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'scroll-y-reverse-transition',
-  head() {
-    return {
-      title: 'Precations',
-      titleTemplate: null,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content:
-            'How to stay safe from the Covid_19 pandemic. Measures to take in order to be safe from Coron virus'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Precautions', // Corrected typo "Precations" to "Precautions"
+  // titleTemplate: null, // Handled by global config or layout
+  meta: [
+    {
+      // hid: 'description', // hid is not standard
+      name: 'description',
+      content:
+        'How to stay safe from the Covid_19 pandemic. Measures to take in order to be safe from Coron virus',
+    },
+  ],
+})
 </script>
 
 <style></style>

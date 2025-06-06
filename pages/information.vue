@@ -38,23 +38,20 @@
   </v-row>
 </template>
 
-<script>
-export default {
-  transition: 'slide-x-reverse-transition',
-  head() {
-    return {
-      title: 'Information',
-      titleTemplate: null,
-      meta: [
-        {
-          name: 'description',
-          content:
-            'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)'
-        }
-      ]
-    }
-  }
-}
+<script setup lang="ts">
+import { useHead } from '#imports'
+
+useHead({
+  title: 'Information',
+  // titleTemplate: null, // Handled by global config or layout
+  meta: [
+    {
+      name: 'description',
+      content:
+        'Information about Corona Virus in Kenya. All you need to know about Covid_19(Corona Virus 2019)',
+    },
+  ],
+})
 </script>
 
 <style></style>

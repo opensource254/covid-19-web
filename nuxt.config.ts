@@ -4,14 +4,14 @@ export default defineNuxtConfig({
    */
   app: {
     head: {
-      titleTemplate: '%s - Covid_19 Kenya', // Placeholder title
-      title: 'Covid_19 Kenya' || '', // Placeholder title
+      titleTemplate: '%s - Covid_19 Kenya',
+      title: 'Covid_19 Kenya',
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
         { property: 'og:image', content: '/infected.png' } // Added og:image
       ],
-      link: [] // Removed app.css link
+      link: []
     }
   },
   /*
@@ -29,25 +29,12 @@ export default defineNuxtConfig({
   /*
    ** Nuxt.js dev-modules
    */
-  buildModules: [
-    // Doc: https://github.com/nuxt-community/eslint-module
-    '@nuxtjs/eslint-module',
-    // Doc: https://github.com/nuxt-community/stylelint-module
-    '@nuxtjs/stylelint-module',
-    // '@nuxtjs/vuetify', // Removed
-    // '@nuxtjs/moment' // Removed
-  ],
-  /*
+    /*
    ** Nuxt.js modules
    */
   modules: [
     'vuetify-nuxt-module',
-    // Doc: https://axios.nuxtjs.org/usage
-    // '@nuxtjs/axios', // Removed
-    // '@nuxtjs/pwa', // Removed
     '@vite-pwa/nuxt', // Added
-    // Doc: https://github.com/nuxt-community/dotenv-module
-    // '@nuxtjs/dotenv', // Removed
     'nuxt-vuefire', // Added nuxt-vuefire
   ],
   vuefire: {
@@ -151,7 +138,6 @@ export default defineNuxtConfig({
     },
     /* vuetify options */
     vuetifyOptions: {
-      ssr: true,
       icons: { // Explicitly define MDI as the default icon set
         defaultSet: 'mdi',
       },

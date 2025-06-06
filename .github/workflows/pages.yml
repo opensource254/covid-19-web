@@ -44,12 +44,12 @@ jobs:
         run: pnpm install --ignore-scripts=false
 
       - name: Generate static site
-        run: pnpm run generate
+        run: npx nuxt build --preset github_pages
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./dist
+          path: ./.output/public
 
   deploy:
     needs: build

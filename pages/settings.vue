@@ -23,7 +23,7 @@
         <v-list-item
           href="https://drive.google.com/open?id=1Gea61QgE-Ks_eOJdc92czImXloztN-Oc"
           target="_blank"
-          prepend-icon="mdi-android"
+          prepend-icon="mdi-android" <!-- Added prepend-icon -->
         >
           Android App
         </v-list-item>

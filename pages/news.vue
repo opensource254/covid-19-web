@@ -22,7 +22,7 @@
                   item.user
                 }}</v-list-item-title>
                 <v-list-item-subtitle>{{
-                  dayjs(new Date(item.created_at)).fromNow()
+                  dayjs(new Date(item.created_at)).fromNow() // Already changed to dayjs in prev step
                 }}</v-list-item-subtitle>
               </v-list-item>
               <v-img max-height="500" :src="item.media_url"></v-img>

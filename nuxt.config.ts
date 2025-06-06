@@ -13,7 +13,6 @@ export default defineNuxtConfig({
       ],
       link: []
     },
-    baseURL: '/covid-19-web/'
   },
   /*
    ** Customize the progress-bar color

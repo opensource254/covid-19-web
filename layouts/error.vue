@@ -18,9 +18,6 @@
 </template>
 
 <script setup lang="ts">
-import { computed } from 'vue' // Added import
-import { useError, useHead, NuxtLink } from '#imports' // Or from 'nuxt/app'
-
 const error = useError()
 
 const pageNotFoundMessage = '404 Not Found'

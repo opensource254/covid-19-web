@@ -14,6 +14,8 @@ export default defineNuxtConfig({
       link: []
     },
   },
+
+  ssr: false,
   /*
    ** Customize the progress-bar color
    */

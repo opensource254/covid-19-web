@@ -13,6 +13,7 @@ export default defineNuxtConfig({
       ],
       link: []
     },
+    baseURL: '/covid-19-web/'
   },
 
   ssr: false,
